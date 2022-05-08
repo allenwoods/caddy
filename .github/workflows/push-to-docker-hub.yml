@@ -24,4 +24,4 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           push: true
-          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/caddy:2.5.1-alpine, ${{ secrets.DOCKER_HUB_USERNAME }}/caddy:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/caddy:2.5.1-alpine, ${{ secrets.DOCKERHUB_USERNAME }}/caddy:latest
