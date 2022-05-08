@@ -21,7 +21,8 @@ RUN xcaddy build \
     --with github.com/mholt/caddy-webdav \
 #    --with github.com/firecow/caddy-forward-auth \
     --with github.com/hslatman/caddy-crowdsec-bouncer \
-    --with github.com/abiosoft/caddy-json-parse
+    --with github.com/abiosoft/caddy-json-parse \
+    --with github.com/caddyserver/replace-response
 
 FROM caddy:2.5.1-alpine
 
