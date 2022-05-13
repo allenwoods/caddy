@@ -24,6 +24,7 @@ RUN xcaddy build \
     # --with github.com/abiosoft/caddy-json-parse \
     --with github.com/caddyserver/replace-response \
     --with github.com/mholt/caddy-l4
+    --with github.com/RussellLuo/caddy-ext/layer4
 
 FROM caddy:2.5.1-alpine
 
