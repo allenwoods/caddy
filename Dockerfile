@@ -18,11 +18,12 @@ RUN xcaddy build \
     # --with github.com/caddy-dns/openstack-designate \
     # --with github.com/caddy-dns/vultr \
     # --with github.com/lolPants/caddy-requestid \
-    --with github.com/mholt/caddy-webdav \
-#    --with github.com/firecow/caddy-forward-auth \
+    # --with github.com/mholt/caddy-webdav \
+    # --with github.com/firecow/caddy-forward-auth \
     # --with github.com/hslatman/caddy-crowdsec-bouncer \
     # --with github.com/abiosoft/caddy-json-parse \
-    --with github.com/caddyserver/replace-response
+    --with github.com/caddyserver/replace-response \
+    --with github.com/mholt/caddy-l4
 
 FROM caddy:2.5.1-alpine
 
