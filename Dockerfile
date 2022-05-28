@@ -2,6 +2,8 @@ FROM caddy:2.5.1-builder-alpine AS builder
 
 RUN xcaddy build \
     --with github.com/caddy-dns/cloudflare \
+    --with github.com/caddy-dns/acmedns \
+    --with github.com/mholt/caddy-dynamicdns \
     --with github.com/greenpau/caddy-security
     # --with github.com/greenpau/caddy-auth-portal \
     # --with github.com/greenpau/caddy-trace \
